@@ -1,0 +1,47 @@
+<!-- punto 1 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="" class="container__form">
+            <div class="container--div">
+                <label for="name" class="form__label">Primer nombre:</label>
+                <input type="text" class="form__input" name="name" id="name" required placeholder="Escribe tu Nombre">
+                <p id="errorName" class="classError"></p>
+            </div>
+            <div class="container--div">
+                <label for="lastname" class="form__label">Primer apellido:</label>
+                <input type="text" class="form__input" name="lastname" id="lastname" required placeholder="Escribe tu apellido">
+                <p id="errorLastName" class="classError"></p>
+            </div>
+            <div class="container--div">
+                <label class="form__label">Tipo de documento:</label>
+                <input type="radio" class="form__radio--input" name="document" id="dni" required value="dni">
+                <label for="dni" class="form__radio--label">DNI</label>
+                <input type="radio" class="form__radio--input" name="document" id="cuil" required value="cuil">
+                <label for="dni" class="form__radio--label">CUIL</label>
+                <p id="errorDocument" class="classError"></p>
+
+            </div>
+            <div class="container--div">
+                <label for="numberdocument" class="form__label">Numero de documento:</label>
+                <input type="number" class="form__input" name="numberdocument" id="numberdocument" required placeholder="Escribe el documento">
+                <p id="errorNumberDocument" class="classError"></p>
+            </div>
+            <div class="container--div">
+                <label for="addres" class="form__label">Dirección:</label>
+                <input type="text" class="form__input" name="addres" id="addres" required placeholder="Escribe tu direccion de residencia">
+                <p id="errorAddres" class="classError"></p>
+            </div>
+            <button class="form__button">Enviar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
